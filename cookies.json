@@ -1,7 +1,7 @@
 [
   {
     "name": "sessionid",
-    "value": "your-session-id-here",
+    "value": "jjaipwjstw7f93w6ptutc8gj3f04w7p",
     "domain": ".tradingview.com",
     "path": "/",
     "httpOnly": true,
@@ -10,7 +10,7 @@
   },
   {
     "name": "device_t",
-    "value": "your-device-token-here",
+    "value": "QWFTZUJROjE.0Rdj6qnbdj8GhJ05d9WdpyMDQdRxCr2_E1QiRytrm7w",
     "domain": ".tradingview.com",
     "path": "/",
     "httpOnly": false,
