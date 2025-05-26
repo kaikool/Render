@@ -1,13 +1,17 @@
 {
-  "name": "tv-chart-screenshot-service",
+  "name": "workspace",
   "version": "1.0.0",
-  "description": "A simple API to capture TradingView chart screenshots",
-  "main": "server.js",
+  "description": "A Node.js service using Express and Puppeteer to capture authenticated TradingView chart screenshots, optimized for deployment on Render Free Plan.",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "puppeteer": "^21.3.8"
+    "chrome-aws-lambda": "^10.1.0",
+    "express": "^5.1.0",
+    "puppeteer": "^24.9.0"
   }
 }

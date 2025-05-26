@@ -1,0 +1,20 @@
+[
+  {
+    "name": "sessionid",
+    "value": "your-session-id-here",
+    "domain": ".tradingview.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "device_t",
+    "value": "your-device-token-here",
+    "domain": ".tradingview.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  }
+]

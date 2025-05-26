@@ -1,8 +1,20 @@
 services:
   - type: web
-    name: tradingview-screenshot
+    name: tradingview-screenshot-service
     env: node
     plan: free
-    buildCommand: "npm install"
-    startCommand: "npm start"
-    autoDeploy: true
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: COOKIE_JSON
+        sync: false
+    scaling:
+      minInstances: 0
+      maxInstances: 1
+    disk:
+      name: tradingview-screenshots
+      mountPath: /tmp
+      sizeGB: 1
+    healthCheckPath: /health
