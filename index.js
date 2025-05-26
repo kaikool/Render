@@ -18,6 +18,21 @@ const PORT = process.env.PORT || 5000;
 // Middleware for JSON parsing
 app.use(express.json());
 
+// Root endpoint - Welcome page
+app.get('/', (req, res) => {
+  res.json({
+    service: 'TradingView Screenshot Service',
+    status: 'running',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      screenshot: '/screenshot?symbol=EXCHANGE:SYMBOL'
+    },
+    example: '/screenshot?symbol=BINANCE:BTCUSDT',
+    documentation: 'https://github.com/kaikool/Render'
+  });
+});
+
 // Helper function to load cookies
 async function loadCookies() {
   try {
